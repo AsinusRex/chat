@@ -1,0 +1,9 @@
+{
+  "name": "LP Group Chat",
+  "version": "0.0.1",
+  "description": "Test",
+  "dependencies": {
+    "express": "4.3.1",
+    "socket.io": "1.0.2"
+  }
+}

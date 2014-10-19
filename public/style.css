@@ -1,0 +1,69 @@
+
+html{
+
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+body{   
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    display: block;
+ 
+    height: 100%;
+    width:100%;
+    position: absolute;
+}
+
+#messages{
+    display: block;
+    height: 80%;
+    width: 100%;
+overflow-y:scroll;
+
+}
+
+#messages span{
+    display: block;
+    border-bottom: 1px solid black;
+    padding-left: 5%;
+}
+#features{
+    display: inline-table;
+    height: 7%;
+    width: 100%;
+border-top: 1px solid blue;
+}
+
+#features button{
+    height: 80%;
+    width: 20%;
+    margin: 1% 2%;
+ 
+    display: table-cell;
+}
+#msgForm{
+    display: inline-table;
+    height: 8%;
+    width: 100%;
+  
+}
+
+#msgForm input{
+    width: 80%;
+    height: 70%;
+    display: table-cell;
+    margin:  1% 2%;
+}
+
+#msgForm button{
+  
+    display: table-cell;
+    width: 10%;
+    height: 100%;
+}
