@@ -3,7 +3,8 @@ $(function ()
     var socket = io();
     var userName;
     //  Name entry and push to server
-    $('#nameForm button').on('click', function () {
+    $('#nameForm button').on('click', function (e) {
+        e.preventDefault()
         userName = $('#nameIn').val();
         socket.emit('newUser', userName);
         $('button').removeAttr('disabled');
