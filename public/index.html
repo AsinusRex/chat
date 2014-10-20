@@ -4,6 +4,7 @@
         <title>LP Group Chat</title>
         <link href="style.css" rel="stylesheet" type="text/css"/> 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <script src="controller.js" type="text/javascript"></script>
         <script src="/socket.io/socket.io.js"></script>
         <style></style>
@@ -11,6 +12,9 @@
     <body>
         <div id="wrapper">
             <div id="messages">
+
+            </div>
+            <aside>
                 <form id="nameForm" action="">
                     <fieldset>
                         <legend>Type your name</legend>
@@ -19,12 +23,14 @@
                         <button>Send</button>
                     </fieldset>
                 </form>
-            </div>
+                <br>
+                <h3>Connected Users</h3>
+                <div id="userList"></div>
+            </aside>
             <nav id="features"> 
-                <button id="chat" disabled>Chat</button>
-                <button id="logout" disabled>Log Out</button>
-                <button id="list" disabled>List</button>
                 <button id="joke" disabled>Joke</button>
+                <button id="proverb" disabled>Chinese Proverb</button>
+                <button id="icebreaker" disabled>Icebreakers</button>
             </nav>
             <form id="msgForm" action="">
                 <input id="msgIn" autocomplete="off"/>
