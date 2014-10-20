@@ -10,7 +10,7 @@ var colors = [];
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
-    res.sendFile('index.html', {root: '/Users/Uvi/Desktop/napoleon/public'});
+    res.sendFile('index.html', {root: '/Desktop/napoleon/public'});
 
 });
 //New User
@@ -39,7 +39,7 @@ io.on('connection', function (socket) {
 
 //User List
     socket.on('list', function () {
-        socket.emit('list', users);
+        socket.emit('list', users, colors);
     });
 //Log out user
     socket.on('logout', function (userName) {
@@ -54,4 +54,3 @@ io.on('connection', function (socket) {
 http.listen(8080, function () {
     console.log('listening on *:8080');
 });
-
